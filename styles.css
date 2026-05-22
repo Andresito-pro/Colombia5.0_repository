@@ -201,6 +201,160 @@ body.dark-theme .row-text h2 {
     color: #bb86fc; /* Morado más claro para fondo oscuro */
 }
 
+/* =========================================
+   ESTILOS ESPECÍFICOS: GLOSARIO.HTML
+   ========================================= */
+
+/* Contenedor de la tabla para permitir scroll en móviles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Asegura que la tabla no se colapse demasiado */
+}
+
+/* Encabezados de la tabla */
+table th {
+    background-color: #6a1b9a; /* Morado del proyecto */
+    color: #00ff88;           /* Verde neón del proyecto */
+    padding: 18px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #00ff88;
+}
+
+/* Celdas de la tabla */
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: top;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Estilo para las palabras en la columna de Inglés */
+table td:nth-child(2) {
+    font-style: italic;
+    color: #6a1b9a;
+    font-weight: 500;
+}
+
+/* Estilo para las palabras en la columna de Español */
+table td:first-child {
+    font-weight: bold;
+    color: #001a33;
+}
+
+/* Efecto cebra para las filas */
+table tr:nth-child(even) {
+    background-color: #f9f9ff;
+}
+
+/* Efecto hover al pasar el mouse por la fila */
+table tr:hover {
+    background-color: #f1fff9;
+    transition: background-color 0.3s ease;
+}
+
+/* Ajuste para el texto de significado */
+table td:last-child {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Responsivo: Ajuste de fuente en pantallas pequeñas */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================================
+   ESTILOS EXCLUSIVOS PARA CONFERENCIAS.HTML
+   (Pegar al final del archivo para no afectar el resto)
+   ======================================================== */
+
+/* ── ANIMACIÓN REVEAL (Para el efecto de aparición) ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── SECCIONES DE CONFERENCIA ── */
+.conference-section { padding: 80px 20px; }
+.conference-section:nth-child(odd) { background: #ffffff; }
+.conference-section:nth-child(even) { background: #f4f4f9; }
+
+.conference-header { display: flex; gap: 20px; margin-bottom: 40px; align-items: center; }
+
+.conference-number { 
+    width: 55px; height: 55px; background: #6a1b9a; color: #00ff88; 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+    font-weight: bold; font-size: 1.2rem; flex-shrink: 0;
+}
+
+/* Layout de dos columnas para las memorias */
+.conference-body { display: grid; grid-template-columns: 1fr 340px; gap: 40px; }
+
+/* Inversión de columnas para la segunda conferencia */
+.conference-body.reverse { grid-template-columns: 340px 1fr; }
+.conference-body.reverse .col-content { order: 2; }
+.conference-body.reverse .col-images { order: 1; }
+
+/* ── BLOQUES DE TEXTO BILINGÜE ── */
+.bilingual-block { 
+    background: #fff; border-right: 4px solid #6a1b9a; padding: 25px; 
+    margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-radius: 8px;
+}
+.bilingual-block.english { background: #f9f9f9; border-right-color: #001a33; font-style: italic; }
+.bilingual-block h3 { color: #6a1b9a; border-bottom: 2px solid #00ff88; display: inline-block; margin-bottom: 15px; font-size: 1rem; }
+
+/* ── CAJA DE PALABRAS CLAVE ── */
+.keywords-box { border: 2px solid #6a1b9a; padding: 20px; border-radius: 8px; box-shadow: 8px 8px 0px #6a1b9a; background: #fff; margin-top: 20px;}
+.keywords-grid { display: grid; grid-template-columns: 1fr 1fr; list-style: none; }
+.keywords-grid li { padding: 5px; font-size: 0.85rem; border-bottom: 1px solid #eee; }
+
+/* ── IMÁGENES LATERALES ── */
+.col-images { display: flex; flex-direction: column; gap: 15px; }
+.col-images img { 
+    width: 100%; border: 2px solid #001a33; border-radius: 4px; 
+    box-shadow: 8px 8px 0px #00ff88; transition: 0.3s; 
+}
+.col-images img:hover { transform: translate(-4px, -4px); }
+
+/* ── SECCIÓN ÉTICA Y GALERÍA ── */
+.ethical-section { background: #001a33; color: #fff; padding: 80px 20px; border-top: 4px solid #00ff88; border-bottom: 4px solid #6a1b9a; }
+.ethical-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+
+.evidence-section { background: #001a33; padding: 60px 20px; }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+.photo-grid img { width: 100%; height: 220px; object-fit: cover; border: 2px solid #00ff88; border-radius: 4px; transition: 0.3s; }
+.photo-grid img:hover { transform: scale(1.05); }
+
+/* Ajuste para móviles */
+@media (max-width: 900px) {
+    .conference-body, .conference-body.reverse { grid-template-columns: 1fr; }
+    .conference-body.reverse .col-content, .conference-body.reverse .col-images { order: unset; }
+    .keywords-grid { grid-template-columns: 1fr; }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .content-row, 
