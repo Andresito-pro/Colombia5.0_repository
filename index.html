@@ -1,61 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia 5.0 | Inicio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Colombia 5.0 – Experiencia académica sobre innovación, ciberseguridad, diseño de interfaces y transformación digital." />
+  <title>Colombia 5.0 | Experiencia Académica</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="conferencias.html">Conferencias</a></li>
-                <li><a href="glosario.html">Glossary</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="grid-bg" aria-hidden="true"></div>
 
-    <main class="container">
-        <section class="content-row">
-            <div class="row-text">
-                <h1>Colombia 5.0</h1>
-                <p class="intro">Acceso, soberanía y productividad para el desarrollo tecnológico nacional</p>
-                <p>Bienvenido a este espacio dedicado a compartir las experiencias, aprendizajes y reflexiones obtenidas durante mi participación en el evento tecnológico Colombia 5.0, uno de los encuentros más importantes del país enfocados en innovación, transformación digital y desarrollo tecnológico.
-                    En esta edición tuve la oportunidad de asistir a conferencias que abordaron temas fundamentales para el presente y futuro de la industria tecnológica. Desde el diseño de interfaces enfocadas en la experiencia del usuario dentro de los videojuegos, hasta la importancia de la ciberseguridad y la protección de 
-                    infraestructuras digitales críticas para la soberanía nacional. </p>
-            </div>
-            <div class="row-image">
-                <img src="img/IMG1_1.jpeg" alt="Evento Colombia 5.0">
-            </div>
-        </section>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagen">
+  <button class="lightbox-close" aria-label="Cerrar imagen">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+</div>
 
-        <section class="content-row">
-            <div class="row-text">
-                <h2>Objetivo del Sitio</h2>
-                <p> - Compartir los conocimientos y experiencias adquiridas durante la participación en el evento Colombia 5.0.</p>
-                <p> - Analizar las principales ideas expuestas en las conferencias asistidas, especialmente en áreas como diseño de interfaces, experiencia de usuario, gobernanza digital y ciberseguridad.</p>
-                <p> - Difundir información tecnológica de manera clara y accesible para estudiantes, desarrolladores y personas interesadas en la innovación digital.</p>
-                <p> - Reflexionar sobre la importancia de la tecnología en el desarrollo del país, la soberanía digital y la transformación de diferentes sectores.</p>
-    
-                
-                <div class="button-group">
-                    <a href="conferencias.html" class="btn">Ver Conferencias</a>
-                    <a href="glosario.html" class="btn">Ver Glosario</a>
-                </div>
-            </div>
-            <div class="row-image">
-                <img src="img/IMG1_2.jpeg" alt="Tecnología y Ética">
-            </div>
-        </section>
-    </main>
+<nav class="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-dot" aria-hidden="true"></div>
+    COLOMBIA <span class="logo-accent">5.0</span>
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="conferencias.html">Conferencias</a></li>
+    <li><a href="glosario.html">Glossary</a></li>
+    <li><a href="zonaGamer.html">Zona Gamer</a></li>
+    <li><a href="conclusiones.html">Conclusión</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <footer>
-        <p>&copy; 2026 - Proyecto Académico SENA | Análisis y Desarrollo de Software</p>
-    </footer>
+<section class="hero" aria-label="Sección principal">
+  <div class="hero-bg" role="img" aria-label="Imagen de Colombia 5.0"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">▶ Experiencia Académica · Tecnología · Innovación</p>
+    <h1 class="hero-title">
+      COLOMBIA<br><span class="highlight">5.0</span>
+    </h1>
+    <p class="hero-subtitle">
+      Experiencia académica sobre innovación, ciberseguridad, diseño de interfaces y transformación digital.
+    </p>
+    <div class="hero-cta">
+      <a href="conferencias.html" class="btn btn-primary">Ver Conferencias</a>
+      <a href="#about" class="btn btn-outline">Conocer más ↓</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-    <script src="main.js"></script>
+<section class="section" id="about">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">// about the event</p>
+      <h2 class="section-title">¿Qué es <span>Colombia 5.0</span>?</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="reveal about-grid-custom">
+      <div>
+        <p class="about-text-mb">
+          <strong class="text-white-strong">Colombia 5.0</strong> es uno de los eventos tecnológicos más importantes del país, un espacio de confluencia entre academia, industria y gobierno que celebra la innovación, el emprendimiento digital y las nuevas fronteras de la tecnología aplicada al desarrollo sostenible de Colombia.
+        </p>
+        <p class="about-text-mb">
+          El evento reúne a líderes, expertos, investigadores y estudiantes con el propósito de compartir conocimiento de vanguardia, explorar tendencias globales y construir un ecosistema digital robusto para la región. Sus conferencias, talleres y zonas interactivas convierten cada edición en una experiencia transformadora.
+        </p>
+        <p class="about-text-no-mb">
+          La asistencia a Colombia 5.0 como actividad académica permitió documentar aprendizajes clave en ciberseguridad, diseño de interfaces y ética tecnológica, nutriendo la formación profesional con perspectivas reales del sector.
+        </p>
+      </div>
+      <div>
+        <div class="quote-block">
+          <p>"La tecnología no es el fin, es el medio para construir un país más equitativo, seguro e innovador."</p>
+        </div>
+        <div class="objectives-wrapper">
+          <div class="objective-card">
+            <span class="objective-icon">🎯</span>
+            <div>
+              <div class="objective-title">Objetivo del Evento</div>
+              <div class="objective-desc">Impulsar la transformación digital en Colombia</div>
+            </div>
+          </div>
+          <div class="objective-card">
+            <span class="objective-icon">🌐</span>
+            <div>
+              <div class="objective-title">Alcance</div>
+              <div class="objective-desc">Academia, industria y sector público</div>
+            </div>
+          </div>
+          <div class="objective-card">
+            <span class="objective-icon">🏆</span>
+            <div>
+              <div class="objective-title">Relevancia</div>
+              <div class="objective-desc">Mayor ecosistema tech de la región</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="neon-line"></div>
+
+<section class="section" id="pillars">
+  <div class="container">
+    <div class="reveal">
+      <p class="section-subtitle">// ejes temáticos</p>
+      <h2 class="section-title">Pilares de <span>Transformación</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <span class="info-card-icon">🤖</span>
+        <h3>Inteligencia Artificial</h3>
+        <p>Exploración de modelos de Machine Learning, redes neuronales y sistemas de IA aplicados a la industria colombiana, con énfasis en ética y uso responsable de datos.</p>
+      </div>
+      <div class="info-card reveal delay-1">
+        <span class="info-card-icon">🔒</span>
+        <h3>Ciberseguridad</h3>
+        <p>Estrategias de defensa, gestión de vulnerabilidades, amenazas emergentes y buenas prácticas para la protección de infraestructuras digitales en el ecosistema empresarial.</p>
+      </div>
+      <div class="info-card reveal delay-2">
+        <span class="info-card-icon">🖥️</span>
+        <h3>Transformación Digital</h3>
+        <p>Casos de éxito y metodologías para la adopción tecnológica en organizaciones, integrando cultura digital, automatización de procesos y rediseño de modelos de negocio.</p>
+      </div>
+      <div class="info-card reveal delay-3">
+        <span class="info-card-icon">🎨</span>
+        <h3>Diseño de Interfaces</h3>
+        <p>Tendencias en UX/UI, diseño centrado en el usuario, accesibilidad digital y la creación de experiencias significativas para entornos web y móvil.</p>
+      </div>
+      <div class="info-card reveal delay-4">
+        <span class="info-card-icon">🚀</span>
+        <h3>Innovación</h3>
+        <p>Ecosistemas de emprendimiento, transferencia tecnológica, startups y el papel de la innovación abierta para resolver desafíos sociales con impacto real.</p>
+      </div>
+      <div class="info-card reveal delay-5">
+        <span class="info-card-icon">⚖️</span>
+        <h3>Ética Tecnológica</h3>
+        <p>Reflexión crítica sobre el impacto social de la automatización, la privacidad de datos y la responsabilidad profesional en el desarrollo de software y sistemas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="neon-line"></div>
+
+<section class="section section-objective-custom" id="objetivo">
+  <div class="container container-objective-custom">
+    <div class="reveal">
+      <p class="section-subtitle">// sobre este sitio</p>
+      <h2 class="section-title">Objetivo del <span>Sitio</span></h2>
+      <div class="divider divider-objective-custom"></div>
+      <p class="objective-text-mb-15">
+        Este sitio web fue desarrollado como actividad académica para documentar y reflexionar sobre los conocimientos y experiencias adquiridos durante la asistencia al evento <strong class="text-white-strong">Colombia 5.0</strong>. Cada sección sintetiza aprendizajes de conferencias, talleres y experiencias interactivas del evento.
+      </p>
+      <p class="objective-text-mb-20">
+        A través de un enfoque bilingüe (Español / English), el sitio presenta conferencias sobre ciberseguridad e interfaces de usuario, un glosario técnico de 30+ términos, la experiencia en la zona gamer y una reflexión ética sobre la tecnología empresarial, cumpliendo con los requisitos multimedia del proyecto.
+      </p>
+      <a href="conferencias.html" class="btn btn-primary">Explorar Conferencias →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">COLOMBIA <span>5.0</span></div>
+  <p class="footer-text">Sitio académico · Tecnología e Innovación · Colombia</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
