@@ -1222,6 +1222,15 @@ body {
   margin: 3rem 0;
 }
 
+.p-gamer-hero {
+    font-size: 1rem;
+    color: var(--text-body);
+    max-width: 550px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
 .stat-box {
   background: var(--bg-card);
   border: 1px solid var(--border-glow);
@@ -1493,6 +1502,15 @@ body {
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.h3-bilingual {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  margin-bottom: 1.5rem;
 }
 
 .conf-info-row {
