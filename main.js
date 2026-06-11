@@ -132,6 +132,14 @@ if (glossarySearch) {
   });
 }
 
+
+  const searchInput = document.getElementById('glossary-search');
+  const queryDisplay = document.getElementById('search-query-display');
+  if (searchInput && queryDisplay) {
+    searchInput.addEventListener('input', () => {
+      queryDisplay.textContent = searchInput.value;
+    });
+  }
 // ---- SMOOTH SCROLL ----
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
