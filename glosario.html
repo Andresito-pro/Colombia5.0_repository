@@ -272,7 +272,7 @@
     <!-- No results message -->
     <div class="no-results" id="no-results" aria-live="polite" role="status">
       <p>No terms found for "<span id="search-query-display"></span>"</p>
-      <p style="font-size:0.8rem; margin-top:0.5rem;">Try a different keyword / Prueba con otra palabra clave</p>
+      <p>Try a different keyword / Prueba con otra palabra clave</p>
     </div>
   </div>
 
@@ -288,15 +288,5 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-  // Update no results query display
-  const searchInput = document.getElementById('glossary-search');
-  const queryDisplay = document.getElementById('search-query-display');
-  if (searchInput && queryDisplay) {
-    searchInput.addEventListener('input', () => {
-      queryDisplay.textContent = searchInput.value;
-    });
-  }
-</script>
 </body>
 </html>
